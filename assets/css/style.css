@@ -378,3 +378,65 @@ input[type="radio"] {
 .kcal-stn-result-text9 {
   grid-area: i;
 }
+.pricing-stn-year-tabbox {
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.pricing-stn-year-tabbox-tab {
+  border: 1px solid var(--70);
+  width: 23.3rem;
+  height: 6.7rem;
+  border-radius: 8px;
+  justify-content: center;
+}
+.btn-monthly {
+  width: 11.4rem;
+  height: 4.7rem;
+  border-radius: 6px;
+  color: #fff;
+  background-color: var(--30);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-yearly {
+  width: 9.9rem;
+  height: 4.7rem;
+  border-radius: 6px;
+  color: var(--15);
+  border: none;
+  background-color: #fafdf2;
+  cursor: pointer;
+}
+.pricing-stn-cardbox {
+  margin: 5rem 0;
+  gap: 3rem;
+}
+.pricing-stn-card {
+  width: 51.2rem;
+  height: 51.5rem;
+  border: 1px solid var(--85);
+  background-color: var(--95);
+  padding: 5rem;
+  flex-direction: column;
+  align-items: self-start;
+  gap: 4rem;
+}
+.btn-choose {
+  color: var(--15);
+  background-color: var(--70);
+  border-radius: 8px;
+  height: 6.3rem;
+  width: 41.2rem;
+  border: none;
+  margin-top: 3.3rem;
+}
+.pricing-stn-card-textbox2-sub h3,
+.pricing-stn-card-textbox h3 {
+  color: var(--30);
+}
+footer {
+  background-color: var(--15);
+  color: #fff;
+  letter-spacing: 1px;
+}
