@@ -18,6 +18,7 @@
 html {
   font-size: 62.5%;
   font-family: "urbanist-regular";
+  scroll-behavior: smooth;
 }
 
 body {
@@ -108,14 +109,13 @@ header {
 }
 nav {
   justify-content: space-between;
-  height: 9.5rem;
-  padding: 0 16.2rem;
 }
 .nav-container a {
   color: #fff;
 }
 .nav-container {
   gap: 4rem;
+  padding: 2rem 0;
 }
 .nav-wrapper {
   gap: 2.6rem;
@@ -188,7 +188,8 @@ main {
 .blogs-stn,
 .kcal-stn,
 .pricing-stn,
-footer {
+footer,
+header {
   padding: 0 16.2rem;
 }
 .features-stn {
@@ -208,6 +209,9 @@ footer {
   text-align: center;
   width: 99.6rem;
   margin: 0 auto;
+}
+.stn-textbox p {
+  margin-top: 1rem;
 }
 .features-stn-cardbox,
 .blogs-stn-cardbox {
@@ -430,6 +434,7 @@ input[type="radio"] {
   width: 41.2rem;
   border: none;
   margin-top: 3.3rem;
+  cursor: pointer;
 }
 .pricing-stn-card-textbox2-sub h3,
 .pricing-stn-card-textbox h3 {
@@ -439,4 +444,39 @@ footer {
   background-color: var(--15);
   color: #fff;
   letter-spacing: 1px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.gototop {
+  gap: 2rem;
+}
+.gototop-iconbox {
+  width: 6.2rem;
+  height: 6.2rem;
+  background-color: var(--20);
+  border-radius: 50%;
+  justify-content: center;
+}
+.footer-nav-wrapper a,
+.footer-btnbox p {
+  color: #fff;
+}
+.footer-nav-wrapper {
+  gap: 2.6rem;
+}
+.footer-container {
+  padding: 1.6rem 3rem;
+  background-color: var(--20);
+  border: 1px solid #2c5446;
+  border-radius: 8px;
+  margin-top: 5rem;
+  justify-content: space-between;
+}
+.footer-btn-wrapper {
+  gap: 2rem;
+}
+.footer-btnbox {
+  border: 1px solid #2c5446;
+  padding: 1.4rem;
+  gap: 0.6rem;
 }
