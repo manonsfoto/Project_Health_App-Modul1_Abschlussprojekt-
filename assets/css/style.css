@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  width: 1920px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 .flex {
@@ -133,7 +133,6 @@ main {
   background-color: #fafdf2;
 }
 .hero-stn {
-  height: 83.2rem;
   gap: 5rem;
 }
 .img-hero-stn {
@@ -144,15 +143,13 @@ main {
 .hero-stn-textbox {
   flex-direction: column;
   justify-content: space-between;
-  width: 75.9rem;
-  height: 59.8rem;
   align-items: flex-start;
+  gap: 7rem;
+  margin: 11.7rem 16.2rem 11.7rem 0;
 }
 .hero-stn-textbox-sub {
   flex-direction: column;
   align-items: flex-start;
-  width: 75.9rem;
-  height: 46.2rem;
   gap: 1rem;
 }
 .hero-stn-textbox-sub h3 {
@@ -216,7 +213,7 @@ header {
 .features-stn-cardbox,
 .blogs-stn-cardbox {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   gap: 3rem;
 }
 
@@ -224,8 +221,6 @@ header {
   background-color: var(--95);
   border: 1px solid var(--85);
   border-radius: 12px;
-  width: 78.3rem;
-  height: 25.3rem;
   padding: 4rem 5rem;
 }
 .features-stn-icon-box {
@@ -243,9 +238,10 @@ header {
   background-color: var(--95);
   border: 1px solid var(--85);
   border-radius: 12px;
-  width: 78.3rem;
-  height: 84.4rem;
   padding: 4rem;
+}
+.blogs-stn-card > img {
+  width: 100%;
 }
 .blogs-stn-card-textwrapper {
   margin-top: 4rem;
@@ -257,8 +253,6 @@ header {
   background-color: var(--99);
   border: 1px solid var(--85);
   border-radius: 12px;
-  width: 70.3rem;
-  height: 10rem;
   padding: 2rem;
   justify-content: space-between;
 }
@@ -290,13 +284,13 @@ form {
 }
 .input-box-wrapper {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   gap: 6rem;
   row-gap: 4.5rem;
 }
 .input-box input,
 .input-box select {
-  width: 70rem;
+  width: 100%;
   height: 5rem;
   background-color: #fff;
   border: 1px solid var(--85);
@@ -415,12 +409,13 @@ input[type="radio"] {
 .pricing-stn-cardbox {
   margin: 5rem 0;
   gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .pricing-stn-card {
-  width: 51.2rem;
-  height: 51.5rem;
   border: 1px solid var(--85);
   background-color: var(--95);
+  border-radius: 12px;
   padding: 5rem;
   flex-direction: column;
   align-items: self-start;
@@ -430,11 +425,14 @@ input[type="radio"] {
   color: var(--15);
   background-color: var(--70);
   border-radius: 8px;
-  height: 6.3rem;
-  width: 41.2rem;
   border: none;
   margin-top: 3.3rem;
+  padding: 1.8rem 4.1rem;
   cursor: pointer;
+  width: 100%;
+}
+.pricing-stn-card-textbox2 {
+  width: 100%;
 }
 .pricing-stn-card-textbox2-sub h3,
 .pricing-stn-card-textbox h3 {
