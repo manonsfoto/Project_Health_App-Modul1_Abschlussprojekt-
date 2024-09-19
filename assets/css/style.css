@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "urbanist-bold";
+  src: url(../fonts/Urbanist-Bold.ttf);
+}
+@font-face {
+  font-family: "urbanist-regular";
+  src: url(../fonts/Urbanist-Regular.ttf);
+}
+@font-face {
+  font-family: "urbanist-semibold";
+  src: url(../fonts/Urbanist-SemiBold.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "urbanist-regular";
+}
+
+body {
+  width: 1920px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --70: #cbea7b;
+  --85: #e5f5bd;
+  --95: #f6fbe9;
+  --99: #fafdf2;
+  --15: #1a3129;
+  --20: #234338;
+  --30: #346454;
+  --grey30: #4c4c4d;
+  --60: #98989a;
+}
+h1 {
+  font-family: "urbanist-bold";
+  font-size: 5.8rem;
+  line-height: 130%;
+  color: var(--15);
+}
+h2 {
+  font-family: "urbanist-bold";
+  font-size: 5rem;
+  line-height: 150%;
+}
+h3 {
+  font-family: "urbanist-semibold";
+  font-size: 3.4rem;
+  line-height: 150%;
+  color: var(--15);
+}
+p {
+  font-size: 1.8rem;
+  line-height: 150%;
+}
+main p {
+  color: var(--grey30);
+}
+.bls {
+  font-family: "urbanist-semibold";
+  font-size: 1.8rem;
+  line-height: 150%;
+}
+/* 'bls' steht für 'Button Label Subtitle' */
+header {
+  background-color: var(--15);
+  height: 16.6rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.top-banner {
+  height: 7.5rem;
+  justify-content: center;
+}
+.top-banner-box {
+  background-color: var(--20);
+  height: 4.7rem;
+  width: 159.6rem;
+  overflow: hidden;
+  justify-content: space-between;
+  border-radius: 6px;
+  border: 1px solid #2c5446;
+  padding: 0 4rem;
+}
+.top-banner-textbox {
+  justify-self: center;
+  gap: 1rem;
+}
+.icon-banner {
+  padding-left: 1rem;
+}
+.img-abstract2 {
+  transform: scaleX(-1);
+}
+.img-abstract,
+.img-abstract2 {
+  width: 19.4rem;
+}
+nav {
+  justify-content: space-between;
+  height: 9.5rem;
+  padding: 0 16.2rem;
+}
+.nav-container a {
+  color: #fff;
+}
+.nav-container {
+  gap: 4rem;
+}
+.nav-wrapper {
+  gap: 2.6rem;
+}
+.btn-contact {
+  color: #262626;
+  background-color: var(--70);
+  border-radius: 8px;
+  width: 13.7rem;
+  height: 5.5rem;
+  justify-content: center;
+}
+
+main {
+  background-color: #fafdf2;
+}
+.hero-stn {
+  height: 83.2rem;
+  gap: 5rem;
+}
+.img-hero-stn {
+  width: 94.5rem;
+  align-self: flex-start;
+}
+
+.hero-stn-textbox {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 75.9rem;
+  height: 59.8rem;
+  align-items: flex-start;
+}
+.hero-stn-textbox-sub {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 75.9rem;
+  height: 46.2rem;
+  gap: 1rem;
+}
+.hero-stn-textbox-sub h3 {
+  border-bottom: 3px solid var(--70);
+  padding-bottom: 1rem;
+}
+.btn-get,
+.btn-book {
+  color: var(--15);
+  background-color: var(--70);
+  border-radius: 8px;
+  width: 18.7rem;
+  height: 5.9rem;
+  justify-content: center;
+}
+.btn-book {
+  background-color: var(--95);
+  border: 1px solid var(--70);
+  width: 15.4rem;
+  height: 5.9rem;
+}
+.btn-wrapper {
+  margin-top: 5rem;
+  gap: 2rem;
+}
+.hero-stn-textbox-sub2 {
+  gap: 1rem;
+}
+.txt-green {
+  color: var(--30);
+}
+.features-stn {
+  padding: 0 16.2rem;
+}
+.features-stn {
+  height: 101.1rem;
+  padding-top: 15rem;
+}
+.features-stn-textbox {
+  padding-bottom: 8rem;
+  text-align: center;
+}
+.features-stn-cardbox {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3rem;
+}
+
+.features-stn-card {
+  background-color: var(--95);
+  border: 1px solid var(--85);
+  border-radius: 12px;
+  width: 78.3rem;
+  height: 25.3rem;
+  padding: 4rem 5rem;
+}
+.features-stn-icon-box {
+  background-color: var(--70);
+  border-radius: 8px;
+  width: 6.8rem;
+  height: 6.8rem;
+  justify-content: center;
+}
+.features-stn-card-text-wrapper {
+  gap: 1.4rem;
+  margin-bottom: 2.4rem;
+}
