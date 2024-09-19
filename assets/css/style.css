@@ -184,18 +184,24 @@ main {
 .txt-green {
   color: var(--30);
 }
-.features-stn {
+.features-stn,
+.blogs-stn {
   padding: 0 16.2rem;
 }
 .features-stn {
-  height: 101.1rem;
   padding-top: 15rem;
 }
-.features-stn-textbox {
+.blogs-stn {
+  padding-top: 17.4rem;
+}
+.stn-textbox {
   padding-bottom: 8rem;
   text-align: center;
+  width: 99.6rem;
+  margin: 0 auto;
 }
-.features-stn-cardbox {
+.features-stn-cardbox,
+.blogs-stn-cardbox {
   display: grid;
   grid-template-columns: auto auto;
   gap: 3rem;
@@ -219,4 +225,41 @@ main {
 .features-stn-card-text-wrapper {
   gap: 1.4rem;
   margin-bottom: 2.4rem;
+}
+.blogs-stn-card {
+  background-color: var(--95);
+  border: 1px solid var(--85);
+  border-radius: 12px;
+  width: 78.3rem;
+  height: 84.4rem;
+  padding: 4rem;
+}
+.blogs-stn-card-textwrapper {
+  margin-top: 4rem;
+}
+.middletext {
+  margin: 3rem 0;
+}
+.blogs-stn-card-subbox {
+  background-color: var(--99);
+  border: 1px solid var(--85);
+  border-radius: 12px;
+  width: 70.3rem;
+  height: 10rem;
+  padding: 2rem;
+  justify-content: space-between;
+}
+.blogs-stn-card-subbox-sub1 {
+  gap: 1.6rem;
+}
+.blogs-stn-card-subbox-sub2 {
+  gap: 1rem;
+}
+.blogs-stn-card-iconbox {
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--95);
+  border: 1px solid #eef8d3;
+  border-radius: 8px;
+  justify-content: center;
 }
