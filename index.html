@@ -309,19 +309,19 @@
             requirements.
           </p>
         </div>
-        <form action="">
+        <form onsubmit="return false">
           <div class="input-box-wrapper">
             <div class="input-box flex">
               <label class="bls" for="bodysize">Body size (in cm)</label>
-              <input type="number" name="" id="bodysize" />
+              <input type="number" name="" id="bodysize" min="50" max="300" />
             </div>
             <div class="input-box flex">
               <label class="bls" for="age">Age</label>
-              <input type="number" name="" id="age" />
+              <input type="number" name="" id="age" min="1" max="200" />
             </div>
             <div class="input-box flex">
-              <label class="bls" for="weight">Weight</label>
-              <input type="number" name="" id="weight" />
+              <label class="bls" for="weight">Weight (in kg)</label>
+              <input type="number" name="" id="weight" min="1" max="300" />
             </div>
             <div class="input-box flex">
               <label class="bls" for="activity">Activity</label>
@@ -360,13 +360,13 @@
           <div class="input-box-wrapper2 flex">
             <p>Gender</p>
             <div class="radio-wrapper flex">
-              <input type="radio" name="gender" id="female" />
+              <input type="radio" name="gender" id="female" checked />
               <label for="female"><p>Female</p></label>
 
-              <input type="radio" name="gender" id="Male" />
+              <input type="radio" name="gender" id="male" />
               <label for="male"><p>Male</p></label>
             </div>
-            <button class="btn-cal" type="button">
+            <button class="btn-cal" type="button" id="btnCalculate">
               <p class="bls">Calculate</p>
             </button>
             <div class="kcal-stn-result">
@@ -374,13 +374,13 @@
               <p class="kcal-stn-result-text2">kcal</p>
               <p class="kcal-stn-result-text3">kJ</p>
               <p class="kcal-stn-result-text4">Basal Metabolic Rate</p>
-              <p class="kcal-stn-result-text5">1745.14</p>
-              <p class="kcal-stn-result-text6">7358.18</p>
+              <p class="kcal-stn-result-text5" id="kcalBaseResult"></p>
+              <p class="kcal-stn-result-text6" id="kJBaseResult"></p>
               <p class="kcal-stn-result-text7">
                 Total Daily Energy Expenditure
               </p>
-              <p class="kcal-stn-result-text8">2636.20</p>
-              <p class="kcal-stn-result-text9">110137.30</p>
+              <p class="kcal-stn-result-text8" id="kcalTotalResult"></p>
+              <p class="kcal-stn-result-text9" id="kJTotalResult"></p>
             </div>
           </div>
         </form>
