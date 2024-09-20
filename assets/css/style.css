@@ -17,7 +17,7 @@
 }
 html {
   font-size: 62.5%;
-  font-family: "urbanist-regular";
+  font-family: "urbanist-regular", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -209,6 +209,9 @@ header {
   width: 99.6rem;
   margin: 0 auto;
 }
+.stn-textbox h2 {
+  color: var(--15);
+}
 .stn-textbox p {
   margin-top: 1rem;
 }
@@ -291,6 +294,9 @@ form {
   gap: 6rem;
   row-gap: 4.5rem;
 }
+.input-box label {
+  color: var(--15);
+}
 .input-box input,
 .input-box select {
   width: 100%;
@@ -334,6 +340,7 @@ input {
 input[type="radio"] {
   accent-color: #cbea7b;
 }
+
 .kcal-stn-result {
   border-radius: 10px;
   background-color: #fff;
@@ -503,4 +510,7 @@ footer {
 }
 .barshort {
   width: 1.4rem;
+}
+.blogs-stn-card-iconbox:hover {
+  cursor: pointer;
 }
