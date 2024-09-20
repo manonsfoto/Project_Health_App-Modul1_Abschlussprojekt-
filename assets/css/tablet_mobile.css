@@ -245,6 +245,8 @@
     justify-content: center;
     gap: 0.5rem;
     display: flex;
+    position: relative;
+    left: 7rem;
   }
   .hero-stn {
     flex-direction: column;
@@ -281,6 +283,7 @@
   .features-stn {
     margin-top: 2rem;
   }
+
   .stn-textbox {
     padding-bottom: 5rem;
     width: 35.8rem;
@@ -308,13 +311,23 @@
   .input-box {
     gap: 2.1rem;
   }
+  select option,
+  select,
+  input {
+    font-size: 1.4rem;
+  }
   .kcal-stn-result {
     width: 100%;
     height: 11.5rem;
     margin-top: 5rem;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 3.5rem 4rem 4rem;
+    grid-template-rows: 3, repeat(1fr);
+  }
+  .kcal-stn-result-text7,
+  .kcal-stn-result-text8,
+  .kcal-stn-result-text9 {
+    padding-bottom: 1rem;
   }
   .pricing-stn-cardbox {
     margin: 3rem 0;
@@ -331,6 +344,7 @@
   }
   footer {
     padding-bottom: 3rem;
+    margin-top: 10rem;
   }
   footer nav {
     position: relative;
